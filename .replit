@@ -35,5 +35,8 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev"
-waitForPort = 5000
+args = "cd Poketwo-Autocatcher && npm install && node index.js"
+waitForPort = 3000
+
+[workflows.workflow.metadata]
+outputType = "console"
